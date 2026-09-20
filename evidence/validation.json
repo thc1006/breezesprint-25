@@ -1,0 +1,105 @@
+{
+  "project": "BreezeSprint25",
+  "release": "0.1.1",
+  "date": "2026-09-21",
+  "bug_fixed": "Lookup of <|nospeech|> failed on official <|nocaptions|> spelling.",
+  "local_tests": {
+    "tests": 191,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 191,
+    "elapsed_seconds": 15.96,
+    "scope": "CPU/synthetic, publisher-documented special-token excerpt with synthetic ordinary vocabulary, mocked Hub/TPU/Colab, real local FFmpeg and IPC tests."
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "packages": {
+    "jax": "0.9.0.1",
+    "jaxlib": "0.9.0.1",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "safetensors": "0.7.0",
+    "torch": "2.10.0+cpu",
+    "pytest": "9.0.2",
+    "nbformat": "5.10.4"
+  },
+  "status": {
+    "physical_tpu_inference_tested": false,
+    "full_breeze_weights_loaded": false,
+    "full_publisher_vocab_downloaded": false,
+    "network_fetch_failure": "Container request failed with DNS/name-resolution error; download tool also failed.",
+    "special_token_definition_checked_in_publisher_web_pages": true,
+    "remote_github_ci_executed": false,
+    "notebook_exact_two_clean_cells": true,
+    "notebook_payload_matches_readable_sources": true,
+    "no_result_zip": true,
+    "output_timestamped_txt_only": true,
+    "original_error_reproduced_on_published_layout_fixture": true,
+    "fixed_same_fixture_passed": true,
+    "metadata_validated_before_weight_download": true,
+    "release_check_passed": true,
+    "local_wheel_build_passed": true
+  },
+  "source_sha256": {
+    "src/breezesprint25/__init__.py": "7f146f62b56fd2f45cea5b76718fdb1833898580dbf8687704dae3dca41bfb59",
+    "src/breezesprint25/assets.py": "a0f030168b264e0405ba7e099130cbd21b0ac74052062b7117c9f3516aa13b32",
+    "src/breezesprint25/checkpoint.py": "6ac4b4add5765fc049395ce85e16da7f0dccb6b203b5a369a131e7c379cfb142",
+    "src/breezesprint25/colab.py": "c0a0e91d6fb2ff132c482ebc6b5fc2bea07f1efc6318a4c1a732bbeb5e5efeeb",
+    "src/breezesprint25/core.py": "8f1838a6457ebf952fdf6cbf6260662120beaf26c2db6d119a69630ed0332769",
+    "src/breezesprint25/engine.py": "77eb7db729041ba6c1043b13c2f1055ab07288b1f6a8021070bfe7dfcc07d3c5",
+    "src/breezesprint25/frontend.py": "3e62c5fbfe3d78ef0c68e0148904e23853bf667b53866fc8a017ea024ce1bfcf",
+    "src/breezesprint25/loading.py": "7ab7d53cfaa8edecfa669ec7be11460b57a9111b52dca4f55f8ed4bfc5e1714b",
+    "src/breezesprint25/pipeline.py": "9f7bc4e003642f6742a81832be82b45eacea60e8a21da0540dd479a1b660c9cc",
+    "src/breezesprint25/preflight.py": "02ea46176a6b72d8bfdfee09eba91ad149201067907bf5b2f05508220319cbeb",
+    "src/breezesprint25/text_output.py": "8fc9a6eb8f770d310c38ca85f25f11264857e34aea2a66effa4a3d799a0d9cdc",
+    "src/breezesprint25/vocabulary.py": "aa9489219156634994be4d87bbf4df68f04499e199b69e98f72c81ecce1300c8",
+    "src/breezesprint25/worker.py": "8380f0026ed875fde4e2dce17dd4278b69b0d05cf984a506bb83132233455f6e"
+  },
+  "notebook_sha256": "dd707c499740623182528bdb8de5598bafb17c48b418267f035806f9a872666a",
+  "model": {
+    "revision": "cffe7ccb404d025296a00758d0a33468bec3a9d0",
+    "input_language": "Taiwanese Mandarin with Mandarin-English code-switching",
+    "output_description": "Traditional-Chinese-oriented model output, retaining recognized English; no script conversion or rewriting",
+    "weight_files": [
+      "model.safetensors"
+    ],
+    "source_dtype": "BF16",
+    "model_id": "MediaTek-Research/Breeze-ASR-25",
+    "preset": "breeze25",
+    "language_token": "zh",
+    "expected_architecture": {
+      "num_mel_bins": 80,
+      "d_model": 1280,
+      "encoder_layers": 32,
+      "decoder_layers": 32,
+      "encoder_attention_heads": 20,
+      "decoder_attention_heads": 20,
+      "encoder_ffn_dim": 5120,
+      "decoder_ffn_dim": 5120,
+      "max_source_positions": 1500,
+      "max_target_positions": 448,
+      "vocab_size": 51865
+    },
+    "files": [
+      "config.json",
+      "generation_config.json",
+      "preprocessor_config.json",
+      "vocab.json",
+      "added_tokens.json",
+      "model.safetensors"
+    ],
+    "source_url": "https://huggingface.co/MediaTek-Research/Breeze-ASR-25/tree/cffe7ccb404d025296a00758d0a33468bec3a9d0",
+    "model_license": "Apache-2.0",
+    "selection_checked_date": "2026-09-21"
+  },
+  "regression_record": "regression-reproduction.json",
+  "online_check": "tools/check_model_assets.py",
+  "byte_identical_inference_components": {
+    "core.py": true,
+    "engine.py": true,
+    "loading.py": true,
+    "checkpoint.py": true
+  },
+  "runtime_lock_unchanged": true
+}

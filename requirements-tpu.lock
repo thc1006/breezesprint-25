@@ -1,0 +1,23 @@
+# Versions inherited from the supplied successful WhisperSprint Colab run.
+# This is not evidence of a completed Breeze checkpoint run; Tokenizers is no longer needed.
+certifi==2026.7.22
+charset-normalizer==3.5.1
+filelock==4.0.1
+fsspec==2026.9.0
+hf-xet==1.6.0
+huggingface-hub==0.36.0
+idna==3.20
+jax==0.9.0.1
+jaxlib==0.9.0.1
+libtpu==0.0.34
+ml_dtypes==0.5.4
+numpy==2.3.5
+opt_einsum==3.4.0
+packaging==26.3
+PyYAML==6.0.3
+requests==2.32.5
+safetensors==0.7.0
+scipy==1.17.0
+tqdm==4.70.1
+typing_extensions==4.16.0
+urllib3==2.8.0

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the model paper separately; this is an independent inference application."
+title: "BreezeSprint25 — Breeze-ASR-25 on Colab TPU"
+version: 0.1.1
+date-released: 2026-09-21
+license: MIT
+url: https://github.com/thc1006/breezesprint-25
+authors:
+  - family-names: Tsai
+    given-names: Hsiu-Chi

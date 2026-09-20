@@ -1,0 +1,10 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/breeze_tokenizer_fix/breezesprint-25
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: breezesprint-25
+  Building wheel for breezesprint-25 (pyproject.toml): started
+  Building wheel for breezesprint-25 (pyproject.toml): finished with status 'done'
+  Created wheel for breezesprint-25: filename=breezesprint_25-0.1.1-py3-none-any.whl size=43134 sha256=5dbb7165837e677fe3f7075c37d5ff54d25d2323d455c011154403bee64b46bf
+  Stored in directory: /tmp/pip-ephem-wheel-cache-93ihk2vh/wheels/a6/b7/37/df0ac74c7675b2508f45f54b1ea2776a0506e135581a91018f
+Successfully built breezesprint-25

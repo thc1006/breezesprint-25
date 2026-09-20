@@ -1,0 +1,36 @@
+{
+  "revision": "cffe7ccb404d025296a00758d0a33468bec3a9d0",
+  "input_language": "Taiwanese Mandarin with Mandarin-English code-switching",
+  "output_description": "Traditional-Chinese-oriented model output, retaining recognized English; no script conversion or rewriting",
+  "weight_files": [
+    "model.safetensors"
+  ],
+  "source_dtype": "BF16",
+  "model_id": "MediaTek-Research/Breeze-ASR-25",
+  "preset": "breeze25",
+  "language_token": "zh",
+  "expected_architecture": {
+    "num_mel_bins": 80,
+    "d_model": 1280,
+    "encoder_layers": 32,
+    "decoder_layers": 32,
+    "encoder_attention_heads": 20,
+    "decoder_attention_heads": 20,
+    "encoder_ffn_dim": 5120,
+    "decoder_ffn_dim": 5120,
+    "max_source_positions": 1500,
+    "max_target_positions": 448,
+    "vocab_size": 51865
+  },
+  "files": [
+    "config.json",
+    "generation_config.json",
+    "preprocessor_config.json",
+    "vocab.json",
+    "added_tokens.json",
+    "model.safetensors"
+  ],
+  "source_url": "https://huggingface.co/MediaTek-Research/Breeze-ASR-25/tree/cffe7ccb404d025296a00758d0a33468bec3a9d0",
+  "model_license": "Apache-2.0",
+  "selection_checked_date": "2026-09-21"
+}

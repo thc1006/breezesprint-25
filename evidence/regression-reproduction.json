@@ -1,0 +1,33 @@
+{
+  "project": "BreezeSprint25",
+  "fixture_scope": "Publisher-documented control IDs + synthetic ordinary byte vocabulary. NOT a full downloaded publisher vocabulary or pretrained inference.",
+  "original_0_1_0": {
+    "failed": true,
+    "error_type": "ValueError",
+    "message": "Missing special token: <|nospeech|>"
+  },
+  "fixed_0_1_1": {
+    "passed": true,
+    "model_id": "MediaTek-Research/Breeze-ASR-25",
+    "revision": "cffe7ccb404d025296a00758d0a33468bec3a9d0",
+    "vocabulary_size": 51865,
+    "no_speech_token": "<|nocaptions|>",
+    "no_speech_token_id": 50362,
+    "no_timestamps_token_id": 50363,
+    "timestamp_begin": 50364,
+    "timestamp_count": 1501,
+    "decoder_prefix": [
+      [
+        50258,
+        50260,
+        50359
+      ]
+    ],
+    "weights_loaded": false,
+    "tpu_inference_tested": false,
+    "scope": "Model metadata and full vocabulary validation only; not ASR accuracy or TPU inference."
+  },
+  "input_vocab_mutated": false,
+  "cpu_only": true,
+  "tpu_inference_tested": false
+}

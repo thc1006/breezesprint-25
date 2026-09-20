@@ -1,0 +1,40 @@
+{
+  "scope": "Publisher special-token IDs and selected generation-config fields, transcribed from the published pages. NOT the complete downloaded vocabulary. Tests fill ordinary IDs with synthetic byte strings.",
+  "checked_date": "2026-09-21",
+  "source_urls": [
+    "https://huggingface.co/MediaTek-Research/Breeze-ASR-25/blob/main/added_tokens.json",
+    "https://huggingface.co/MediaTek-Research/Breeze-ASR-25/blob/main/generation_config.json"
+  ],
+  "special_tokens": {
+    "<|startoftranscript|>": 50258,
+    "<|en|>": 50259,
+    "<|zh|>": 50260,
+    "<|translate|>": 50358,
+    "<|transcribe|>": 50359,
+    "<|startoflm|>": 50360,
+    "<|startofprev|>": 50361,
+    "<|nocaptions|>": 50362,
+    "<|notimestamps|>": 50363
+  },
+  "generation_config_excerpt": {
+    "decoder_start_token_id": 50258,
+    "eos_token_id": 50257,
+    "no_timestamps_token_id": 50363,
+    "lang_to_id": {
+      "<|en|>": 50259,
+      "<|zh|>": 50260
+    },
+    "task_to_id": {
+      "transcribe": 50359,
+      "translate": 50358
+    },
+    "suppress_tokens": [
+      50258,
+      50358,
+      50359,
+      50360,
+      50361,
+      50362
+    ]
+  }
+}

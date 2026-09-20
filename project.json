@@ -1,0 +1,68 @@
+{
+  "name": "BreezeSprint25",
+  "version": "0.1.1",
+  "repository": "thc1006/breezesprint-25",
+  "default_branch": "main",
+  "description": "Transcribe Taiwanese Mandarin and Mandarin–English recordings into timestamped text. Two-cell Google Colab TPU notebook using Breeze-ASR-25, JAX and automatic timestamped TXT downloads.",
+  "colab_url": "https://colab.research.google.com/github/thc1006/breezesprint-25/blob/main/BreezeSprint25.ipynb",
+  "homepage": "https://colab.research.google.com/github/thc1006/breezesprint-25/blob/main/BreezeSprint25.ipynb",
+  "optional_pages_url": "https://thc1006.github.io/breezesprint-25/",
+  "license": "MIT",
+  "model_license": "Apache-2.0",
+  "language": "Python",
+  "keywords": [
+    "breeze-asr-25",
+    "breeze-asr",
+    "whisper",
+    "whisper-large-v2",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "google-colab",
+    "colab-notebook",
+    "jax",
+    "xla",
+    "tpu",
+    "tpu-v5e",
+    "bfloat16",
+    "timestamped-transcript",
+    "traditional-chinese",
+    "taiwanese-mandarin",
+    "code-switching"
+  ],
+  "capabilities": {
+    "input_language": "Taiwanese Mandarin with Mandarin-English code-switching",
+    "task": "transcribe",
+    "language_token": "zh",
+    "output_description": "Traditional-Chinese-oriented model output, retaining recognized English; no script conversion or rewriting",
+    "model": "MediaTek-Research/Breeze-ASR-25",
+    "model_revision": "cffe7ccb404d025296a00758d0a33468bec3a9d0",
+    "code_cells": 2,
+    "formats": [
+      "txt"
+    ],
+    "diarization": false,
+    "word_alignment": false,
+    "external_asr_api": false,
+    "cpu_asr_fallback": false,
+    "single_device_only": true,
+    "input_ui": "upload-only",
+    "automatic_download": true,
+    "result_archive": false,
+    "text_format": "srt-style-timestamped-txt-v1"
+  },
+  "evidence": {
+    "current_model_physical_tpu_run": false,
+    "current_model_full_pretrained_execution": false,
+    "live_colab_browser_tested": false,
+    "wer_cer_verified": false,
+    "speedup_measured": false,
+    "inherited_whispersprint_evidence": "Architecture/UI ancestry only; NOT a Breeze checkpoint validation."
+  },
+  "primary_sources": [
+    "https://huggingface.co/MediaTek-Research/Breeze-ASR-25",
+    "https://huggingface.co/MediaTek-Research/Breeze-ASR-25/tree/cffe7ccb404d025296a00758d0a33468bec3a9d0",
+    "https://arxiv.org/abs/2506.11130",
+    "https://docs.jax.dev/en/latest/benchmarking.html",
+    "https://research.google.com/colaboratory/faq.html"
+  ]
+}

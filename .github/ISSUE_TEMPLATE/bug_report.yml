@@ -1,0 +1,31 @@
+name: Runtime bug
+description: Report a reproducible BreezeSprint25 runtime failure.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach private audio, transcripts or credentials. Remove filenames/private text from diagnostics before sharing."
+  - type: input
+    id: revision
+    attributes:
+      label: Release or commit
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Actual device_kind and Python version
+      placeholder: "TPU v5 lite; Python 3.13.x"
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failing stage, exception and minimal steps
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Selected, sanitized local logs and expected behavior
+      description: Logs stay in Colab; do not attach private media or a full runtime dump. A smoke pass is not an accuracy reference.

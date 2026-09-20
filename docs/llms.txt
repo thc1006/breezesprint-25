@@ -1,0 +1,13 @@
+# BreezeSprint25
+
+> Transcribe Taiwanese Mandarin and Mandarin–English recordings into timestamped text. Independent, experimental JAX/TPU integration; not an official model release.
+
+- [README](https://github.com/thc1006/breezesprint-25/blob/main/README.md): two-cell upload-to-TXT workflow.
+- [Model](https://github.com/thc1006/breezesprint-25/blob/main/docs/MODEL.md): MediaTek-Research/Breeze-ASR-25, fixed revision, language/output and integrity.
+- [Validation](https://github.com/thc1006/breezesprint-25/blob/main/docs/VALIDATION.md): what has/has not been tested.
+- [Notebook](https://colab.research.google.com/github/thc1006/breezesprint-25/blob/main/BreezeSprint25.ipynb): self-contained Colab notebook; requires actual TPU allocation.
+
+This targets the ASR-25 Mandarin/code-switching checkpoint, not Taigi-specific ASR-26. Traditional Chinese is the model tendency, not a per-character guarantee.
+No live Breeze TPU measurement, WER/CER, word alignment or API is advertised.
+TXT contains segment timestamps. Audio is processed on Google Colab, not locally
+on the user's computer. Model weights are Apache-2.0; application code MIT.

@@ -1,0 +1,11 @@
+# CPU test dependencies only. These do not provide a production CPU ASR fallback.
+# Pins match the supplied predecessor Colab run. This optimized release requires its own TPU acceptance.
+jax==0.9.0.1
+jaxlib==0.9.0.1
+numpy==2.3.5
+scipy==1.17.0
+ml_dtypes==0.5.4
+opt_einsum==3.4.0
+safetensors==0.7.0
+huggingface-hub==0.36.0
+requests==2.32.5
